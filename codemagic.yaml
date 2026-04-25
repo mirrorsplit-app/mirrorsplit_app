@@ -4,9 +4,8 @@ workflows:
     environment:
       flutter: stable
     scripts:
-      - cd mirrorsplit_app
       - flutter clean
       - flutter pub get
       - flutter build appbundle --release
     artifacts:
-      - mirrorsplit_app/build/app/outputs/bundle/release/app-release.aab
+      - build/app/outputs/bundle/release/app-release.aab
